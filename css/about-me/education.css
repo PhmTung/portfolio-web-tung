@@ -1,0 +1,573 @@
+
+body {   
+    margin: 0;
+    font-family: "Plus Jakarta Sans";
+}
+.sidebar {
+    background-color: #121212;
+    height: 100vh;
+    width: 20%;
+    color: #A3A3A3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Plus Jakarta Sans";
+    box-shadow: 32px 0px 63px 3px rgba(0, 0, 0, 0.72);
+    z-index: 3;
+    position: sticky;
+    top: 0
+}
+
+.background {
+    position: fixed;
+    width: 999999px;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.namebar {
+    font-size: 24px;
+    margin-top: 80px;
+}
+.namebar li {
+    padding: 3%;
+    cursor: pointer;
+    width: 50%;
+}
+.namebar a {
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+.name {
+    padding:8%
+}
+#a1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+    color: #fff;
+}
+#a2 {
+    font-size: 128px;
+    margin: 0;
+    color: #fff;
+    font-weight: 900;
+}
+.let-talk {
+    position: fixed;
+    width: 500px;
+    height: 400px;
+    top: 25%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.talk-header {
+    text-align: center;
+    padding: 0 15%;
+}
+.heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 2%;
+}
+.sub-heading {
+    color: #a5a5a5;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 2%;
+}
+.sidebar >ul {
+    list-style-type: none;
+}
+.mainscreen {
+    display: flex;
+}
+
+.namebar li.active {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+.b1 {
+    background-color: rgb(0, 0, 0);
+    height: 84%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.thongtin {
+    background-color: #121212;
+    width: 80%;
+    padding: 5% 0;
+}
+
+.chitiet { 
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.chitiet1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.thongtin .chitiet p {
+    margin: 0%;
+    color: #A3A3A3;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.thongtin .chitiet p.infor  {
+    font-weight:600;
+    font-size: 24px;
+    color: #fff;
+}
+
+.edu .timeline p {
+    margin: 0%;
+    color: #7E7E7E;
+    font-weight:900;
+    font-size: 36px;
+}
+
+
+
+.edu .timeline p.content {
+    font-weight:600;
+    font-size: 24px;
+    color: #fff;
+    width: 619px;
+}
+
+.timeline {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.timeline .nam {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+.container {
+    background-color: #000;
+    width: 100%;
+}
+
+a {
+    font-size: 24px;
+    color: #afafaf;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.active a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mainscreen {
+    display: flex;
+}
+
+.container .container-header{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+}
+
+.container-header .header-item {
+    width: 330px;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #6d6d6d;
+    cursor: pointer;
+    border-bottom: 1px solid #6d6d6d;
+}
+.container-header .item {
+    width: 200px;
+    height: 48px;
+    text-align: center;
+}
+
+.header-item.active {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    
+    font-weight: bold;
+    transition: 0.3s ease-out;
+}
+.container-body {
+    padding: 0 5%;
+    margin-top: 3%;
+}
+.container-body .body-item {
+    background-color: #292929;
+    border-radius: 16px;
+    width: 30%;
+    height: 240px;
+    cursor: pointer;
+}
+.container-body .items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.kynang {
+    background-color: #121212;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.tenkynang {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 800;
+}
+.cackynang {
+    color: #d6d6d6;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 12px ;
+}
+.nhomkynang {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 32%;
+}
+.heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 2%;
+}
+.sub-heading {
+    color: #a5a5a5;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 2%;
+}
+.content {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.content-body {
+    height: 1845px;
+    background-color: #292929;
+}
+.anh img {
+    border-radius: 4%;
+    border-style: solid;
+    border-color: transparent;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right bottom, #1C86E8, #36DDE8, #4FDA9F, #BFFF6F) border-box;
+}
+.let-talk {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 25%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.talk-header {
+    text-align: center;
+    padding: 0 15%;
+}
+.let-talk .heading {
+    font-size: 24px;
+    color: #000;
+}
+.let-talk .sub-heading {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+.let-talk form {
+    padding: 0 10%;
+}
+.let-talk form span {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+.let-talk form input {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.let-talk form button {
+    margin-left: 150px;
+    margin-top: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(0, 255, 128), 0 0 0px rgb(0, 255, 149), 0 0 0px rgb(27, 147, 245);
+}
+.background {
+    position: fixed;
+    width: 999999px;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.cancel {
+    position: fixed;
+    margin-left: 460px
+}
+.let-talk.active, .background.active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.namebar button {
+    background-color: black;
+    cursor: pointer;
+    border-radius: 12px;
+    color: #fff;
+    height: 50px;
+    width: 115px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    border-style: solid;
+    border-color: transparent;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right bottom, #1C86E8, #36DDE8, #4FDA9F, #BFFF6F) border-box;
+}
+
+.namebar button:hover {
+    background: linear-gradient(rgb(44, 44, 44), rgb(44, 44, 44)) padding-box, linear-gradient(to right bottom, #1C86E8, #36DDE8, #4FDA9F, #BFFF6F) border-box;
+    box-shadow: 0 0 5px rgb(0, 255, 128),
+0 0 25px rgb(0, 255, 149), 0 0 50px rgb(27, 147, 245);
+}
+
+.namebar button:active {
+    transform: scale(0.96)
+}
+.arrow-icon, .menu-icon {
+    visibility: hidden;
+    position: absolute;
+}
+
+@media only screen and (max-width: 375px) {
+    .menu-icon {
+        position: absolute;
+        visibility: visible;
+        right: 25px;
+        top: 25px;
+        z-index: 5;
+    }
+    .arrow-icon {
+        position: absolute;
+        visibility: visible;
+        right: 25px;
+        top: 26px;
+    }
+    .sidebar {
+        width: 0%;
+        visibility: hidden;
+    }
+   .sidebar.active {
+    visibility: visible;
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+   }
+   .namebar {
+    margin-top: 25px;
+   }
+   .namebar li a {
+    font-size: 24px;
+    color: #a3a3a3;
+   }
+   .active a {
+    font-size: 12px;
+    color: #A3A3A3;
+    font-weight: 400;
+   }
+   
+   li.active a {
+    color: #fff;
+    font-size: 32px;
+   }
+   #a2 {
+    font-size: 96px;
+   }
+   #a1 {
+    font-size: 21px;
+   }
+   .thongtin {
+    width: 100%;
+   }
+   .container-header .header-item {
+    width: 2000px;
+    height: 24px;
+    font-size: 12px;
+   }
+   .header-item a {
+    font-size: 12px;
+   }
+   .anh img {
+    width: 327px;
+    height: 356px;
+   }
+   .chitiet {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 56px;
+   }
+   .thongtin .chitiet p {
+    font-size: 10px;
+    color: #a3a3a3;
+   }
+   .thongtin .chitiet p.infor {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 4px;
+   }
+   .chitiet1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 82%;
+    margin-top: 16px;
+   }
+   .self {
+    margin-bottom: 10px;
+    position: relative;
+    right: 10px;
+   }
+   body > div.mainscreen > div.thongtin > div.chitiet > div.chitiet1 > div:nth-child(2) {
+    position: relative;
+    right: 65px;
+   }
+   body > div.mainscreen > div.thongtin > div.chitiet > div.chitiet1 > div:nth-child(4) {
+    position: relative;
+    right: 40px;
+   }
+   .container .container-header {
+    padding-top: 30px;
+   }
+   .edu .timeline p {
+    font-size: 18px;
+   }
+   .edu .timeline p.content {
+    font-size: 12px;
+    width: 320px;
+   }
+   .year, .content {
+    margin-bottom: 4px;
+   }
+   .nam {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 8px;
+   }
+   .timeline {
+    justify-content: flex-start;
+    padding: 0 30px
+   }
+   .kynang {
+    flex-direction: column;
+   }
+   .tenkynang {
+    font-size: 16px;
+   }
+   .cackynang {
+    font-size: 14px;
+   }
+   .nhomkynang {
+    width: 100%;
+    padding: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+   }
+   .cackynang {
+    padding: 0 30px;
+   }
+   .timeline .nam {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+   .let-talk {
+    width: 327px;
+    height: 380px;
+   }
+   .let-talk .sub-heading {
+    font-size: 12px;
+   }
+   .let-talk .heading {
+    font-size: 20px;
+   }
+   .let-talk form input {
+    height: 28px;
+   }
+   .let-talk form span {
+    font-size: 12px;
+   }
+   .let-talk form button {
+    font-size: 12px;
+    margin-left: 80px;
+   }
+   .cancel {
+    margin-left: 290px;
+   }
+}

@@ -1,0 +1,283 @@
+
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans";
+}
+.sidebar {
+    background-color: #121212;
+    height: 100vh;
+    width: 20%;
+    color: #A3A3A3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Plus Jakarta Sans";
+    box-shadow: 32px 0px 63px 3px rgba(0, 0, 0, 0.72);
+    z-index: 3;
+}
+.namebar {
+    font-size: 24px;
+    margin-top: 80px;
+}
+.namebar li {
+    padding: 3%;
+    cursor: pointer;
+    width: 50%;
+}
+#a1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 300;
+    position: relative;
+    top: 20px;
+}
+#a2 {
+    font-size: 128px;
+    margin: 0;
+    font-weight: 900;
+}
+.sidebar >ul {
+    list-style-type: none;
+}
+.container {
+    background-color: aquamarine;
+    width: 80%;
+}
+.mainscreen {
+    display: flex;
+}
+.name {
+    padding: 8%;
+    color: #fff ;
+}
+.namebar li.active {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.infor {
+    background-color: rgb(255, 255, 255);
+    height: 16%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 3;
+}
+.b1 {
+    background-color: rgb(0, 0, 0);
+    height: 84%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .infor p {
+    margin: 0%;
+    font-size: 24px;
+
+}
+.container .infor p.dam {
+    font-weight:500;
+    font-size: 32px;
+}
+.TU {
+    height: 794px;
+    width: auto;
+    position: relative;
+    right: 1px;
+    z-index: 2;
+    box-shadow:  32px 0px 63px 3px rgba(0, 0, 0, 0.20);
+    opacity: 0;
+
+}
+@keyframes mySlide {
+    from{margin-left: -80%;}
+    to{margin-right: 0%;}
+}
+.N {
+    height: 794px;
+    width: auto;
+    position: relative;
+    right: 148px;
+    z-index: 1;
+    box-shadow:  32px 0px 63px 3px rgba(0, 0, 0, 0.20);
+    opacity: 0;
+}
+.G {
+    height:794px;
+    width: auto;
+    position: relative;
+    right: 151px;
+    box-shadow:  32px 0px 63px 3px rgba(0, 0, 0, 0.20);
+    opacity: 0;
+}
+
+.show {
+    opacity: 1!important;
+    animation: mySlide;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+    animation-timing-function: linear;
+     animation-duration: 0.5s; 
+    transition-timing-function: ease
+}
+
+.button {
+    background-color: black;
+    cursor: pointer;
+    padding: 12px 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    color: #fff;
+    height: 60px;
+    width: 140px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans";
+    position: relative;
+    top: 80px;
+    right: 60px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right bottom, #1C86E8, #36DDE8, #4FDA9F, #BFFF6F) border-box;   
+}
+
+
+.button:hover {
+    background: linear-gradient(rgb(44, 44, 44), rgb(44, 44, 44)) padding-box, linear-gradient(to right bottom, #1C86E8, #36DDE8, #4FDA9F, #BFFF6F) border-box;
+    box-shadow: 0 0 5px rgb(0, 255, 128),
+0 0 25px rgb(0, 255, 149), 0 0 50px rgb(27, 147, 245);
+}
+.button:active {
+    transform: scale(0.96)
+}
+
+.text {
+    margin: 0; 
+}
+
+.namebar a {
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+li.active a {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+}
+.menu-icon {
+    position: absolute;
+    visibility: hidden;
+}
+.arrow-icon {
+    position: absolute;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 375px) {
+    .menu-icon {
+        position: absolute;
+        visibility: visible;
+        right: 25px;
+        top: 25px;
+        z-index: 5;
+    }
+    .arrow-icon {
+        position: absolute;
+        visibility: visible;
+        right: 25px;
+        top: 25px;
+    }
+    .sidebar {
+        width: 0%;
+        visibility: hidden;
+    }
+   .sidebar.active {
+    visibility: visible;
+    z-index: 5;
+    width: 100%;
+    position: fixed;
+   }
+   .namebar {
+    margin-top: 25px;
+   }
+   .container {
+    width: 100%;
+   }
+   .TU {
+    height: 350px;
+    width: auto;
+    left: 0;
+    position: absolute;
+   }
+   .N {
+    height: 330px;
+    width: auto;
+    position: absolute;
+    right: 125px;
+    top: 350px;
+   }
+   .G {
+    height: 330px;
+    width: auto;
+    position: absolute;
+    right: 0px;
+    top: 350px;
+   }
+   .container .infor p.dam {
+    font-size: 12px;
+    font-weight: bold;
+   }
+   .container .infor p {
+    font-size: 10px;
+    font-weight: 400;
+   }
+   .button {
+    top: 285px;
+    right: 27px;
+    width: 115px;
+    height: 50px;
+    font-size: 16px;
+   }
+   li a {
+    font-size: 24px;
+    color: #a3a3a3;
+   }
+   li.active a {
+    color: #fff;
+    font-size: 24px;
+   }
+   #a2 {
+    font-size: 96px;
+   }
+   #a1 {
+    font-size: 21px;
+   }
+   .let-talk {
+    width: 327px;
+    height: 380px;
+   }
+   .let-talk .sub-heading {
+    font-size: 12px;
+   }
+   .let-talk .heading {
+    font-size: 20px;
+   }
+   .let-talk form input {
+    height: 28px;
+   }
+   .let-talk form span {
+    font-size: 12px;
+   }
+   .let-talk form button {
+    font-size: 12px;
+    margin-left: 80px;
+   }
+   .cancel {
+    margin-left: 290px;
+   }
+  }
